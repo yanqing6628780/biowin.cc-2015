@@ -334,7 +334,7 @@ tbody {
 	border-bottom: none;
 }
 .header {
-	padding: 20px 0;
+	padding: 7px 0;
 	border-bottom: 1px solid #eaeaea;
 	background-color: #fff;
 }
@@ -3325,7 +3325,7 @@ a.overlay.small i {
 /* first level menu */
 .navbar.navbar-default {
 	border-radius: 0;
-	margin: 12px 0 5px;
+	margin: 0px;
 	background-color: #fafafa;
 	border-color: #f1f1f1;
 }
@@ -3339,7 +3339,7 @@ a.overlay.small i {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
-	padding: 12px 20px 12px 19px;
+	padding: 12px 16px 12px 15px;
 	z-index: 102;
 	border: 1px solid transparent;
 	bottom: -1px;
@@ -4029,6 +4029,8 @@ a.overlay.small i {
 	-ms-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
+	width: 143px;
+	transform:scale(0.8);
 }
 .logo img:hover {
 	opacity: 0.85;
