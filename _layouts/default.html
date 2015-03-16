@@ -111,7 +111,7 @@
                       <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                           <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}">首页</a></li>
-                          <li class="{% if page.category == 'about' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'join' or page.category == 'case' or page.category == 'support' or page.category == 'news' or page.category == 'contact' %}dropdown{% endif %}">
+                          <li class="{% if page.category == 'about' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'case' or page.category == 'news' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">认识博文</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}/about/">企业简介</a></li>
@@ -120,7 +120,7 @@
                               <li><a href="{{ site.url }}/history/">公司历程</a></li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'products' %}dropdown mega-menu active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'join' or page.category == 'case' or page.category == 'support' or page.category == 'news' or page.category == 'contact' %}dropdown mega-menu{% endif %}">
+                          <li class="{% if page.category == 'products' %}dropdown mega-menu active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'case' or page.category == 'news' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown mega-menu{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">产品中心</a>
                             <ul class="dropdown-menu">
                               <li>
@@ -131,7 +131,7 @@
                                     <img src="/images/assets/daohang.png" alt="">
                                   </div>
                                   <div class="col-sm-8 col-md-6">
-                                    <h4><a href="{{ site.url }}/partners/">产品中心</a></h4>
+                                    <h4><a href="{{ site.url }}/products/">产品中心</a></h4>
                                     <div class="row">
                                       <div class="col-sm-6">
                                         <div class="divider"></div>
@@ -157,7 +157,7 @@
                               </li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'support' %}dropdown active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'products' or page.category == 'case' or page.category == 'join' or page.category == 'news' or page.category == 'contact' %}dropdown{% endif %}">
+                          <li class="{% if page.category == 'case' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'about' or page.category == 'news' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">项目案例</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}">华为机房监测机器人</a></li>
@@ -165,7 +165,7 @@
                               <li><a href="{{ site.url }}">Nokia家庭娱乐机器人</a></li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'support' %}dropdown active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'products' or page.category == 'case' or page.category == 'join' or page.category == 'news' or page.category == 'contact' %}dropdown{% endif %}">
+                          <li class="{% if page.category == 'news' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'case' or page.category == 'about' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">新闻中心</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}">企业新闻</a></li>
@@ -173,7 +173,7 @@
                               <li><a href="{{ site.url }}">行业动态</a></li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'products' %}dropdown active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'join' or page.category == 'case' or page.category == 'support' or page.category == 'news' or page.category == 'contact' %}dropdown mega-menu{% endif %}">
+                          <li class="{% if page.category == 'partners' %}dropdown mega-menu active{% elsif page.category == 'home' or page.category == 'about' or page.category == 'case' or page.category == 'news' or page.category == 'products' or page.category == 'join' or page.category == 'contact' %}dropdown mega-menu{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">合作伙伴</a>
                             <ul class="dropdown-menu">
                               <li>
