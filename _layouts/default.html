@@ -160,9 +160,33 @@
                           <li class="{% if page.category == 'case' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'about' or page.category == 'news' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">项目案例</a>
                             <ul class="dropdown-menu">
-                              <li><a href="{{ site.url }}">华为机房监测机器人</a></li>
-                              <li><a href="{{ site.url }}">国家电网高空作业机器人</a></li>
-                              <li><a href="{{ site.url }}">Nokia家庭娱乐机器人</a></li>
+                              <li>
+                                <div class="row">
+                                  <div class="col-sm-4 col-md-6">
+                                    <h4><a href="{{ site.url }}/products/">项目案例</a></h4>
+                                    <p>项目案例</p>
+                                    <img src="/images/assets/case.png" alt="项目案例">
+                                  </div>
+                                  <div class="col-sm-8 col-md-6">
+                                    <h4><a href="{{ site.url }}/case/">项目案例</a></h4>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <div class="divider"></div>
+                                        <ul class="menu">
+                                          <li><a href="{{ site.url }}/intelligence/"><i class="fa fa-angle-right"></i>华为机房监测机器人</a></li>
+                                          <li><a href="{{ site.url }}/kinetic-energy/"><i class="fa fa-angle-right"></i>国家电网高空作业机器人</a></li>
+                                          <li><a href="{{ site.url }}/products/robot-module.html"><i class="fa fa-angle-right"></i>Nokia家庭娱乐机器人</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="divider"></div>
+                                        <ul class="menu">
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
                             </ul>
                           </li>
                           <li class="{% if page.category == 'news' %}dropdown active{% elsif page.category == 'home' or page.category == 'products' or page.category == 'case' or page.category == 'about' or page.category == 'partners' or page.category == 'join' or page.category == 'contact' %}dropdown{% endif %}">
