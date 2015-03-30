@@ -5579,3 +5579,9 @@ ul.tweets li span {
 .ie8 .overlay-container:hover .overlay { 
 	display: block;
 }
+
+.news-list .media {
+  border-bottom: 1px solid #999999;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
