@@ -2929,20 +2929,6 @@ ul.pagination li > a:focus {
 	color: #ffffff;
 	background-color: #999999;
 }
-.panel-heading a:after {
-	font-family: "FontAwesome";
-	content: "\f147";
-	position: absolute;
-	right: 15px;
-	font-size: 14px;
-	font-weight: 300;
-	top: 50%;
-	line-height: 1;
-	margin-top: -7px;
-}
-.panel-heading a.collapsed:after {
-	content: "\f196";
-}
 .panel-heading a:hover,
 .panel-transparent .panel-heading a:hover {
 	text-decoration: none;
