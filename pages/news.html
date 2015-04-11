@@ -1,0 +1,84 @@
+---
+layout: pages
+permalink: /news/
+category: news
+title: 新闻中心
+---
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h1 class="page-title">{{ page.title }}</h1>
+							<div class="separator-2"></div>
+							
+							<!-- page-title end -->
+
+							<!-- blogpost start -->
+							<div class="col-md-12 news-list">
+									{% for post in site.categories["enterprise-news"] %}
+									<div class="media row">
+									  <div class="media-left col-xs-2">
+									    <a href="{{ site.url }}/{{ post.url }}">
+									      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
+									    </a>
+									  </div>
+									  <div class="media-body col-xs-10">
+									    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
+								        {{ post.description }}
+									  </div>
+									</div>
+									{% endfor %}
+									{% for post in site.categories["industry-news"] %}
+									<div class="media row">
+									  <div class="media-left col-xs-2">
+									    <a href="{{ site.url }}/{{ post.url }}">
+									      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
+									    </a>
+									  </div>
+									  <div class="media-body col-xs-10">
+									    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
+								        {{ post.description }}
+									  </div>
+									</div>
+									{% endfor %}
+									{% for post in site.categories["enterprise-news"] %}
+									<div class="media row">
+									  <div class="media-left col-xs-2">
+									    <a href="{{ site.url }}/{{ post.url }}">
+									      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
+									    </a>
+									  </div>
+									  <div class="media-body col-xs-10">
+									    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
+								        {{ post.description }}
+									  </div>
+									</div>
+									{% endfor %}
+									{% for post in site.categories["industry-news"] %}
+									<div class="media row">
+									  <div class="media-left col-xs-2">
+									    <a href="{{ site.url }}/{{ post.url }}">
+									      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
+									    </a>
+									  </div>
+									  <div class="media-body col-xs-10">
+									    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
+								        {{ post.description }}
+									  </div>
+									</div>
+									{% endfor %}
+								</div>
+							<!-- blogpost end -->
+						</div>
+						<!-- main end -->
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
