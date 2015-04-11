@@ -269,7 +269,7 @@
 		//-----------------------------------------------
 		if ($('.owl-carousel').length>0) {
 			$(".owl-carousel.index-news-list").owlCarousel({
-				items: 1,
+				items: 2,
 				autoPlay: 5000,
 				pagination: false,
 				navigation: true,
