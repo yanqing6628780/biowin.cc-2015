@@ -604,7 +604,29 @@ full_title: 博文机器人
 				</div>
 			</div>
 			<!-- section end -->
-
+<div class="section clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2><a href="{{ site.url }}/news/">新闻中心</a></h2>
+							<div class="separator-2"></div>
+							<div class="owl-carousel index-news-list">{% for post in site.categories["news"] %}
+								<div class="media row">
+								  <div class="media-left col-xs-3">
+								    <a href="{{ site.url }}/{{ post.url }}">
+								      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
+								    </a>
+								  </div>
+								  <div class="media-body col-xs-9">
+								    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
+								    {{ post.description }}
+								  </div>
+								</div>{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+</div>
 
 <div class="section clearfix">
 
@@ -629,8 +651,8 @@ full_title: 博文机器人
 						<div class="col-md-3">
 							<div class="box-style-1 gray-bg object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="200">
 								<div class="overlay-container gallery">
-									<img src="/images/honors/honors-2.jpg" alt="">
-									<a href="/images/honors/honors-2.jpg" class="popup-img overlay small">
+									<img src="/images/home/honors-3.png" alt="">
+									<a href="/images/home/honors-3.png" class="popup-img overlay small">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -640,8 +662,8 @@ full_title: 博文机器人
 						<div class="col-md-3">
 							<div class="box-style-1 gray-bg object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="100">
 								<div class="overlay-container gallery">
-									<img src="/images/honors/honors-3.jpg" alt="">
-									<a href="/images/honors/honors-3.jpg" class="popup-img overlay small"><i class="fa fa-search"></i></a>
+									<img src="/images/home/honors-4.png" alt="">
+									<a href="/images/home/honors-4.png" class="popup-img overlay small"><i class="fa fa-search"></i></a>
 								</div>
 								
 							</div>
@@ -649,8 +671,8 @@ full_title: 博文机器人
 						<div class="col-md-3">
 							<div class="box-style-1 gray-bg object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">
 								<div class="overlay-container gallery">
-									<img src="/images/honors/honors-4.jpg" alt="">
-									<a href="/images/honors/honors-4.jpg" class="popup-img overlay small"><i class="fa fa-search"></i></a>
+									<img src="/images/honors/honors-2.jpg" alt="">
+									<a href="/images/honors/honors-2.jpg" class="popup-img overlay small"><i class="fa fa-search"></i></a>
 								</div>
 								
 							</div>
@@ -661,111 +683,41 @@ full_title: 博文机器人
 						</div>
 					</div>
 				</div>
-
-			</div>
+</div>
 
 <div class="section clearfix gray-bg">
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-
-							<h2><a href="{{ site.url }}/partners/">合作伙伴</a></h2>
-							<div class="separator-2"></div>
-							<div class="owl-carousel carousel-autoplay">
-								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="300">
-									<div class="overlay-container">
-										<img src="/images/partners/gdut.jpg" alt="广东工业大学">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">广东工业大学</h4>
-									</div>
-								</div>
-								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="200">
-									<div class="overlay-container">
-										<img src="/images/partners/gzhu.jpg" alt="广州大学">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">广州大学</h4>
-									</div>
-								</div>
-								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="100">
-									<div class="overlay-container">
-										<img src="/images/partners/ualberta.jpg" alt="加拿大阿尔伯达大学">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">加拿大阿尔伯达大学</h4>
-									</div>
-								</div>
-								<div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">
-									<div class="overlay-container">
-										<img src="/images/partners/ntu.jpg" alt="新加坡南洋理工大学">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">新加坡南洋理工大学</h4>
-									</div>
-								</div>
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="/images/partners/spring.jpg" alt="深圳斯普瑞机器人有限公司">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">深圳斯普瑞机器人有限公司</h4>
-									</div>
-								</div>
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="/images/partners/smd.jpg" alt="东莞速美达自动化有限公司">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">东莞速美达自动化有限公司</h4>
-									</div>
-								</div>
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="/images/partners/xyychina.jpg" alt="河源新勇艺国际集团">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">河源新勇艺国际集团</h4>
-									</div>
-								</div>
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="/images/partners/sensorobots.jpg" alt="上海一坤电气工程有限公司">
-									</div>
-									<div class="image-box-body">
-										<h4 class="title">上海一坤电气工程有限公司</h4>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><a href="{{ site.url }}/partners/">合作伙伴</a></h2>
+		<div class="separator-2"></div>
+		<div class="owl-carousel carousel-autoplay">
+		  <div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="300">
+		    <div class="overlay-container"><a href="http://www.gdut.edu.cn/" target="_blank"><img src="/images/partners/gdut.jpg" alt="广东工业大学"></a></div>
+		  </div>
+		  <div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="200">
+			<div class="overlay-container"><a href="http://www.gzhu.edu.cn/" target="_blank"><img src="/images/partners/gzhu.jpg" alt="广州大学"></a></div>
+		  </div>
+		  <div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="100">
+			<div class="overlay-container"><a href="http://www.ualberta.ca/" target="_blank"><img src="/images/partners/ualberta.jpg" alt="加拿大阿尔伯达大学"></a></div>
+		  </div>
+		  <div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">
+			<div class="overlay-container"><a href="http://www.ntu.edu.sg/" target="_blank"><img src="/images/partners/ntu.jpg" alt="新加坡南洋理工大学"></a></div>
+		  </div>
+		  <div class="image-box">
+			<div class="overlay-container"><a href="http://www.szspring.net.cn/"><img src="/images/partners/spring.jpg" alt="深圳斯普瑞机器人有限公司"></a></div>
+		  </div>
+		  <div class="image-box">
+			<div class="overlay-container"><a href="http://www.smd-automation.com/" target="_blank"><img src="/images/partners/smd.jpg" alt="东莞速美达自动化有限公司"></a></div>
+		  </div>
+		  <div class="image-box">
+			<div class="overlay-container"><a href="http://www.xyychina.com/" target="_blank"><img src="/images/partners/xyychina.jpg" alt="河源新勇艺国际集团"></a></div>
+		  </div>
+		  <div class="image-box">
+			<div class="overlay-container"><a href="http://www.sensorobots.net/" target="_blank"><img src="/images/partners/sensorobots.jpg" alt="上海一坤电气工程有限公司"></a></div>
+		  </div>
+        </div>
       </div>
-      <div class="section clearfix">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h2><a href="{{ site.url }}/news/">新闻中心</a></h2>
-							<div class="separator-2"></div>
-							<div class="owl-carousel index-news-list">{% for post in site.categories["news"] %}
-								<div class="media row">
-								  <div class="media-left col-xs-3">
-								    <a href="{{ site.url }}/{{ post.url }}">
-								      <img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}-small.jpg" alt="{{ post.title }}">
-								    </a>
-								  </div>
-								  <div class="media-body col-xs-9">
-								    <h4 class="media-heading"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>
-								    {{ post.description }}
-								  </div>
-								</div>{% endfor %}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	</div>
+  </div>
+</div>
